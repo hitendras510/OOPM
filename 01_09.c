@@ -1,19 +1,30 @@
-#include(stdio.h)
+#include <iostream>
 using namespace std;
 
-class rectangle
+class Rectangle
 {
 public:
     int length, breadth; // attributes
-    int area()           // behaviour 1
-    {
+
+    int area()
+    { // behaviour 1
         return length * breadth;
     }
-    int perimeter()     // behaviour 2
-    {
+
+    int perimeter()
+    { // behaviour 2
         return 2 * (length + breadth);
     }
 };
+
 int main()
 {
-    rectangle rl;      // object created
+    Rectangle r1; // object created
+    r1.length = 4;
+    r1.breadth = 5;
+
+    cout << "Area: " << r1.area() << endl;
+    cout << "Perimeter: " << r1.perimeter() << endl;
+
+    return 0;
+}
