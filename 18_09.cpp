@@ -33,3 +33,11 @@ int main()
 }
 //to implement complex calcutation
 // class complex
+#include<iostream>
+using namespace std;
+    class complex {
+        private:
+        double real, imag;
+        public:
+        complex(){ } //default constructor
+}
