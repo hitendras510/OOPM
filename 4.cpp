@@ -1,0 +1,15 @@
+//swap function 
+#include <iostream>
+using namespace std;
+
+void swap(int &x, int &y){
+    int temp = x;
+    x = y;
+    y = temp;   
+}
+int main(){
+    int x = 24, y = 50;
+    swap(x, y);
+    cout << "x = " << x << "  y = " << y;
+    return 0;
+}
