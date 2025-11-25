@@ -14,6 +14,12 @@ class Toaster: public Appliance{
         cout<<"Toaster calls\n"<<endl;
     }
 };
+class Oven: public Appliance{
+    public:
+    void start(){
+        cout<<"Oven calls\n"<<endl;
+    }
+};
 
 class Microwave: public Appliance{
     public:
@@ -24,6 +30,9 @@ class Microwave: public Appliance{
 
 int main()
 {
-
-    
+Appliance *obj1 = new Toaster;
+Appliance *obj2 = new Oven;
+runAppliance(obj1);
+runAppliance(obj2);
+return 0;
 }
