@@ -43,11 +43,6 @@ class Microwave: public Appliance{
 
 int main()
 {
-    Appliance *obj1 = new Toaster;
-    Appliance *obj2 = new Oven;
-
-    obj1->start();   // Calls Toaster version
-    obj2->start();   // Calls Oven version
-
+    Appliance obj;
     return 0;
 }
