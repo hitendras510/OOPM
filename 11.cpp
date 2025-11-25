@@ -43,6 +43,7 @@ class Microwave: public Appliance{
 
 int main()
 {
-    Appliance obj;
+     //dynamic obj; // static obj
+    Appliance *obj=new Toaster; // dynamic obj
     return 0;
 }
